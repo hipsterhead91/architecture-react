@@ -1,0 +1,29 @@
+.page-link {
+  width: max-content;
+  @extend %text-semibold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: $color-second;
+  text-transform: uppercase;
+
+  @media (max-width: $screen-lg) {
+    font-size: 14px;
+  }
+
+  &_small {
+    font-size: 14px;
+
+    @media (max-width: $screen-lg) {
+      font-size: 12px;
+    }
+  }
+}
+
+.page-link__arrow {
+  letter-spacing: 0;
+  transition: 0.3s;
+
+  &_hidden {
+    color: transparent;
+  }
+}

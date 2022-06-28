@@ -1,0 +1,51 @@
+.logo {
+  @include flex(row, center);
+}
+
+.logo__image {
+  width: 48px;
+  height: 48px;
+  margin: 0 12px 0 0;
+  background-color: $color-second;
+
+  @media (max-width: $screen-xl) {
+    width: 44px;
+    height: 44px;
+    margin: 0 10px 0 0;
+  }
+
+  @media (max-width: $screen-lg) {
+    width: 40px;
+    height: 40px;
+    margin: 0 8px 0 0;
+  }
+
+  &_small {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px 0 0;
+  }
+
+  &_monocolor {
+    background-color: $black;
+  }
+}
+
+.logo__text {
+  @extend %text-extrabold;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (max-width: $screen-xl) {
+    font-size: 26px;
+  }
+
+  @media (max-width: $screen-lg) {
+    font-size: 24px;
+  }
+
+  &_small {
+    font-size: 20px;
+  }
+}

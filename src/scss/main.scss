@@ -1,0 +1,25 @@
+// ШРИФТЫ
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// СБРОС СТИЛЕЙ
+@import '../../node_modules/normalize-scss/sass/normalize';
+@import 'default-styles';
+
+// SCSS ПЕРЕМЕННЫЕ, ШАБЛОНЫ, МИКСИНЫ
+@import 'utils';
+
+// БЛОКИ
+@import 'blocks/app';
+@import 'blocks/header';
+@import 'blocks/content';
+@import 'blocks/main-page';
+@import 'blocks/logo';
+@import 'blocks/intro';
+@import 'blocks/page-link';
+@import 'blocks/about';
+@import 'blocks/gallery';
+@import 'blocks/services';
+@import 'blocks/details';
+@import 'blocks/footer';
+@import 'blocks/projects';
+@import 'blocks/project';

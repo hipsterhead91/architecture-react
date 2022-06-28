@@ -1,0 +1,78 @@
+.about {
+  width: 100%;
+  padding: 100px 0 120px 0;
+  @include flex(column, center);
+
+  @media (max-width: $screen-xl) {
+    padding: 80px 0 100px 0;
+  }
+
+  // @media (max-width: $screen-lg) {
+  //   padding: 60px 0 80px 0;
+  // }
+}
+
+.about__container {
+  width: 100%;
+  max-width: 1440px;
+  @include flex(row, normal, center);
+
+  @media (max-width: $screen-xl) {
+    @include flex(row, normal, space-between);
+  }
+}
+
+.about__heading {
+  margin: 0 100px 0 0;
+  @extend %text-regular;
+  font-size: 32px;
+  color: $black;
+  line-height: 110%;
+
+  @media (max-width: $screen-xl) {
+    min-width: max-content;
+    margin: 0 80px 0 60px;
+    font-size: 28px;
+  }
+
+  @media (max-width: $screen-lg) {
+    margin: 0 60px 0 40px;
+    font-size: 24px;
+  }
+}
+
+.about__text {
+  max-width: 500px;
+  @include flex(column);
+
+  @media (max-width: $screen-xl) {
+    margin: 0 80px 0 0;
+    max-width: none;
+  }
+
+  @media (max-width: $screen-lg) {
+    margin: 0 60px 0 0;
+  }
+}
+
+.about__paragraph {
+  margin: 0 0 16px 0;
+  @extend %text-regular;
+  font-size: 16px;
+  line-height: 160%;
+  color: $black;
+
+  @media (max-width: $screen-lg) {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+
+.about__paragraph:last-of-type {
+  margin: 0 0 44px 0;
+
+  @media (max-width: $screen-lg) {
+    margin: 0 0 28px 0;
+  }
+}

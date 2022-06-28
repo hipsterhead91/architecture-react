@@ -1,0 +1,117 @@
+.services {
+  width: 100%;
+  padding: 140px 0 140px 0;
+  @include flex(column, center);
+
+  @media (max-width: $screen-xxl) {
+    padding: 120px 0 120px 0;
+  }
+
+  @media (max-width: $screen-xl) {
+    padding: 100px 0 100px 0;
+  }
+
+  @media (max-width: $screen-lg) {
+    padding: 80px 0 80px 0;
+  }
+}
+
+.services__container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 100px 0 100px;
+  @include flex(column, center);
+}
+
+.services__subtitle {
+  @extend %text-extralight;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: darken($color-main, $amount: 50);
+
+  @media (max-width: $screen-xl) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $screen-lg) {
+    font-size: 16px;
+  }
+}
+
+.services__heading {
+  margin: 8px 0 56px 0;
+  @extend %text-semibold;
+  font-size: 40px;
+  text-align: center;
+  color: $gray-darkest;
+
+  @media (max-width: $screen-xl) {
+    margin: 8px 0 48px 0;
+    font-size: 32px;
+  }
+
+  @media (max-width: $screen-lg) {
+    margin: 4px 0 40px 0;
+    font-size: 24px;
+  }
+}
+
+.services__list {
+  width: 100%;
+  @include flex(row, normal, space-around);
+  list-style: none;
+
+  @media (max-width: $screen-xxl) {
+    @include flex(row, normal, space-between);
+  }
+}
+
+.services__list-element {
+  width: 28%;
+  @include flex(column, center);
+  list-style: none;
+}
+
+.services__icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: darken($color-main, $amount: 10);
+
+  @media (max-width: $screen-lg) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.services__subheading {
+  margin: 24px 0 12px 0;
+  @extend %text-regular;
+  font-size: 18px;
+  text-align: center;
+  color: darken($color-main, $amount: 50);
+
+  @media (max-width: $screen-xl) {
+    margin: 20px 0 8px 0;
+  }
+
+  @media (max-width: $screen-lg) {
+    margin: 16px 0 4px 0;
+    font-size: 16px;
+  }
+}
+
+.services__paragraph {
+  @extend %text-regular;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: $black;
+
+  @media (max-width: $screen-lg) {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
